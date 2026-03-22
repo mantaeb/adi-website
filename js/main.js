@@ -1,5 +1,5 @@
 /* ============================================
-   2Grow.eu - Main JavaScript
+   Adi Dwek Bonar - Main JavaScript
    Handles: mobile menu toggle, contact form
    ============================================ */
 
@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
         + (phone ? 'Phone: ' + phone + '\n' : '')
         + '\n' + message;
 
-      var subject = 'Contact from 2Grow.eu - ' + name;
-      var mailtoLink = 'mailto:info@2grow.eu?subject='
+      var subject = 'Contact from adi.bonar1.com - ' + name;
+      var mailtoLink = 'mailto:info@adi.bonar1.com?subject='
         + encodeURIComponent(subject)
         + '&body=' + encodeURIComponent(body);
 
