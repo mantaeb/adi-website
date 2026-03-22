@@ -4,27 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Papers and articles by Adi Dwek Bonar on psychotherapy, parenthood, and child development.">
-  <title>Papers — Adi Dwek Bonar</title>
+  <title>Papers - Adi Dwek Bonar</title>
   <link rel="icon" href="images/favicon.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="site-header scrolled" id="site-header">
+  <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-name">Adi Dwek Bonar</span>
-        <span class="logo-tagline">Psychoanalytic Psychotherapist, MSW</span>
-      </a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+      <a href="index.html" class="logo"><span class="logo-name">Adi Dwek Bonar</span><span class="logo-tagline">Psychoanalytic Psychotherapist, MSW</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M3 6h18M3 12h18M3 18h18"/>
         </svg>
       </button>
-      <ul class="main-nav" id="main-nav">
+      <ul class="main-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="papers.html" class="active">Papers</a></li>
         <li><a href="papers-he.html">כתבים</a></li>
@@ -33,58 +27,47 @@
     </div>
   </header>
 
-  <!-- Page hero -->
-  <div class="page-hero">
-    <div class="page-hero-content">
-      <p class="page-hero-eyebrow">Reading &amp; Reflection</p>
+  <main class="site-main">
+
+    <section class="card">
       <h1>Papers</h1>
-    </div>
-  </div>
+    </section>
 
-  <!-- Papers grid -->
-  <section class="section">
-    <div class="section-inner">
+    <!--
+      ============================================
+      HOW TO ADD A NEW PAPER:
+      1. Copy the <section class="card"> block below
+      2. Update the image, title, date, excerpt, and link
+      3. Paste it before the "Papers in Hebrew" link
+      ============================================
+    -->
 
-      <p class="section-lead fade-up">Reflections on parenthood, child development and the inner life — where clinical experience meets everyday life.</p>
-
-      <!--
-        ============================================
-        HOW TO ADD A NEW PAPER:
-        1. Copy the <article class="paper-card"> block below
-        2. Update the image src, title, date, excerpt, and href links
-        3. Paste it inside the papers-grid div
-        ============================================
-      -->
-
-      <div class="papers-grid">
-
-        <!-- Paper: Mourning over LEGO towers -->
-        <article class="paper-card fade-up">
-          <img src="images/lego-towers.jpg" alt="LEGO blocks" class="paper-card-img">
-          <div class="paper-card-body">
-            <div class="paper-card-date">November 2014</div>
-            <h3 class="paper-card-title">
-              <a href="paper-mourning-over-lego.html">Mourning over LEGO towers</a>
-            </h3>
-            <p class="paper-card-excerpt">An innocent game of LEGO on an early Sunday morning between one adorable sleep monster and her tired mother reveals interesting insights about parenthood styles, while re-thinking Freud's theory of mourning and melancholia.</p>
-            <a href="paper-mourning-over-lego.html" class="paper-read-more">Read paper</a>
-          </div>
-        </article>
-
+    <!-- Paper: Mourning over LEGO towers -->
+    <section class="card">
+      <div class="paper-card">
+        <img src="images/lego-towers.jpg" alt="LEGO play" class="paper-image portrait">
+        <div class="paper-content">
+          <h3 class="paper-title">
+            <a href="paper-mourning-over-lego.html">Mourning over LEGO towers</a>
+          </h3>
+          <div class="paper-date">November 2014</div>
+          <p class="paper-excerpt">An innocent game of LEGO on an early Sunday morning between one adorable sleep monster and her tired mother, reveals interesting insights about parenthood styles, while re-thinking Z. Freud's theory of mourning and melancholia.</p>
+          <a href="paper-mourning-over-lego.html" class="read-more">more...</a>
+        </div>
       </div>
+    </section>
 
-      <div class="text-center mt-2 fade-up">
-        <a href="papers-he.html" class="cross-link">כתבים בעברית &larr; Papers in Hebrew</a>
-      </div>
+    <!-- Link to Hebrew papers -->
+    <section class="card text-center">
+      <a href="papers-he.html" class="cross-link">כתבים בעברית &larr; Papers in Hebrew</a>
+    </section>
 
-    </div>
-  </section>
+  </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>
-        <div class="footer-brand"><a href="index.html">Adi Dwek Bonar</a></div>
-        <div class="footer-sub">Psychoanalytic Psychotherapist, MSW</div>
+      <div class="footer-brand">
+        <a href="index.html">Adi Dwek Bonar <span>- Psychoanalytic Psychotherapist</span></a>
       </div>
       <div class="footer-email">
         <a href="mailto:info@adi.bonar1.com">info@adi.bonar1.com</a>
