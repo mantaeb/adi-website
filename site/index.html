@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="2Grow.eu - A place for psychotherapy. Psychoanalytic psychotherapy for children, adolescents and their parents.">
+  <meta name="keywords" content="Adi Bonar Dwek, Psychotherapy, therapy, Luxembourg, psychology, treatment, counseling, children, parenthood">
+  <title>2Grow.eu - A Place for Psychotherapy</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======== HEADER / NAVIGATION ======== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-name">Adi Dwek Bonar</span><span class="logo-tagline">Psychoanalytic Psychotherapist, MSW</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+      </button>
+      <ul class="main-nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="papers.html">Papers</a></li>
+        <li><a href="papers-he.html">כתבים</a></li>
+        <li><a href="about-he.html">אודות</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <main class="site-main">
+
+    <!-- Welcome Section -->
+    <section class="card welcome">
+      <h1>Welcome</h1>
+      <p>We invite you to read, think, consult and talk about your parenthood and about your children in an un-formal, comfortable and safe environment.</p>
+      <p class="subtitle">Need someone to listen?</p>
+      <p>Interested in <a href="papers.html">reading</a> about parenthood and other parents' experience? Curious how can you understand more?</p>
+      <p>Come join us.</p>
+      <p>If you are looking for a therapist, want to get in touch or consult privately please fill the form below.</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="card">
+      <h2>Get in Touch</h2>
+      <form class="contact-form" id="contact-form" action="mailto:info@2grow.eu" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="name@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number (optional)">
+        </div>
+        <div class="form-group full-width">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Add a message or question..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+        <div class="form-status" id="form-status"></div>
+      </form>
+    </section>
+
+    <!-- ======== FEATURED PAPERS ========
+         To add a new paper: copy one paper-card div and update the content.
+    -->
+
+    <!-- Featured Paper: Hebrew -->
+    <section class="card">
+      <div class="paper-card">
+        <img src="images/within-my-skin.jpg" alt="" class="paper-image">
+        <div class="paper-content">
+          <h3 class="paper-title">
+            <a href="https://www.hebpsy.net/articles.asp?id=3146" target="_blank" rel="noopener">בתוך העור של עצמי: על איסוף, פיזור, התפוררות וחיבור</a>
+          </h3>
+          <div class="paper-date">June 2014 &middot; פורסם באתר ״פסיכולוגיה עברית״</div>
+          <p class="paper-excerpt" dir="rtl">בוקר לחוץ, ילדה קטנה, גרגירי סוכר המתפזרים לכל עבר ואמא אחת שמנסה לאסוף את הסוכר, את הילדה ואת עצמה לתוך עצמה. תוך כדי היא מהרהרת בתאוריות של אסתר ביק, ג'ון בולבי ודונלד וויניקוט הנוגעות לקשר בין הגוף הפיזי לספירה הנפשית.</p>
+          <a href="https://www.hebpsy.net/articles.asp?id=3146" target="_blank" rel="noopener" class="read-more">...עוד</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Paper: English -->
+    <section class="card">
+      <div class="paper-card">
+        <img src="images/lego-towers.jpg" alt="LEGO play" class="paper-image portrait">
+        <div class="paper-content">
+          <h3 class="paper-title">
+            <a href="paper-mourning-over-lego.html">Mourning over LEGO towers</a>
+          </h3>
+          <div class="paper-date">November 2014</div>
+          <p class="paper-excerpt">An innocent game of LEGO on an early Sunday morning between one adorable sleep monster and her tired mother, reveals interesting insights about parenthood styles, while re-thinking Z. Freud's theory of mourning and melancholia.</p>
+          <a href="paper-mourning-over-lego.html" class="read-more">more...</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html">2grow.eu <span>- a place for psychotherapy</span></a>
+      </div>
+      <div class="footer-email">
+        <a href="mailto:info@2grow.eu">info@2grow.eu</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
