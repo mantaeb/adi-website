@@ -27,29 +27,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (form) {
     form.addEventListener('submit', function (e) {
-      // Build mailto body from form fields
-      var name = form.querySelector('#name').value;
-      var email = form.querySelector('#email').value;
-      var phone = form.querySelector('#phone').value;
-      var message = form.querySelector('#message').value;
-
-      var body = 'Name: ' + name + '\n'
-        + 'Email: ' + email + '\n'
-        + (phone ? 'Phone: ' + phone + '\n' : '')
-        + '\n' + message;
-
-      var subject = 'Contact from adi.bonar1.com - ' + name;
-      var mailtoLink = 'mailto:adi@bonar1.com?subject='
-        + encodeURIComponent(subject)
-        + '&body=' + encodeURIComponent(body);
-
       e.preventDefault();
-      window.location.href = mailtoLink;
 
-      if (status) {
-        status.className = 'form-status success';
-        status.textContent = 'Opening your email client...';
-      }
+      var submitBtn = form.querySelector('.submit-btn');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          if (status) {
+            status.className = 'form-status success';
+            status.textContent = 'Thank you! Your message has been sent.';
+          }
+          form.reset();
+        } else {
+          if (status) {
+            status.className = 'form-status error';
+            status.textContent = 'Something went wrong. Please try again or email adi@bonar1.com directly.';
+          }
+        }
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+      }).catch(function () {
+        if (status) {
+          status.className = 'form-status error';
+          status.textContent = 'Something went wrong. Please try again or email adi@bonar1.com directly.';
+        }
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+      });
     });
   }
 });
