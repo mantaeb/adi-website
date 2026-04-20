@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adi.bonar1.com/sitemap.xml
