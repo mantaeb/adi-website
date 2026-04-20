@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         + '\n' + message;
 
       var subject = 'Contact from adi.bonar1.com - ' + name;
-      var mailtoLink = 'mailto:info@adi.bonar1.com?subject='
+      var mailtoLink = 'mailto:adi@bonar1.com?subject='
         + encodeURIComponent(subject)
         + '&body=' + encodeURIComponent(body);
 
