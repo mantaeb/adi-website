@@ -3,6 +3,16 @@
    Handles: mobile menu toggle, contact form
    ============================================ */
 
+(function loadCloudflareAnalytics() {
+  if (document.querySelector('script[data-cf-beacon]')) return;
+
+  var beacon = document.createElement('script');
+  beacon.defer = true;
+  beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  beacon.setAttribute('data-cf-beacon', '{"token": "2caf3e043db94f3789d0973eac0965a4"}');
+  document.head.appendChild(beacon);
+})();
+
 document.addEventListener('DOMContentLoaded', function () {
   // Mobile menu toggle
   var toggle = document.querySelector('.menu-toggle');
